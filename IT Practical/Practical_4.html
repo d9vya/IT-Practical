@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Practical 4</title>
+    </head>
+    
+    <script>
+        var i = 2;
+        var size = 10;
+        var color = ['Crimson', 'Purple', 'Indigo', 'Navy', 'Cyan', 'Forestgreen', 'Maroon', 'Rebeccapurple', 'Teal', 'Darkmagenta'];
+        
+        function call(){
+            size = size + 3;
+            document.write('<p style="font-size: '+size+'px; color:'+color[size%10]+'">'+i*1+' '+i*2+' '+i*3+' '+i*4+' '+i*5+' '+i*6+' '+i*7+' '+i*8+' '+i*9+' '+i*10+' </p>');
+            i = i + 1;
+            
+            if(i == 11){
+                clearInterval(myInterval);
+            }
+        }
+        var myInterval = setInterval(call,5000);
+    </script>
+    <body>
+    </body>
+</html>
+

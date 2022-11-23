@@ -1,0 +1,19 @@
+{
+    "pet": [
+        {
+            "Petname":"Tom",
+            "Petage":"7",
+            "Petweight":"55",
+            "Pettype":"Cat",
+            "Petlike":"Catching Jerry"},
+
+        {
+            "Petname":"Jerry",
+            "Petage":"6",
+            "Petweight":"25",
+            "Pettype":"Mouse",
+            "Petlike":"Running"
+        }
+    ]
+}
+

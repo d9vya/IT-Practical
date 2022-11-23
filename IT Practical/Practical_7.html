@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practical 7</title>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        
+        <style>
+            table {
+                margin: 0 100;
+                font-size: large;
+                border: 1px solid black;
+            }
+
+            h1 {
+                margin: 0 250px;
+                color: red;
+                font-size: xx-large;
+                font-family: Helvetica;
+            }
+
+            td {
+                background-color: #E4F5D4;
+                border: 1px solid black;
+            }
+
+            th,td {
+                font-weight: bold;
+                border: 1px solid black;
+                padding: 10px;
+                text-align: center;
+            }
+
+            td {
+                font-weight: lighter;
+            }
+
+        </style>
+     </head>
+
+     <body>
+        <section>
+            <h1>Pet Details</h1>
+            
+            <table id='table'>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Weight</th>
+                    <th>Type</th>
+                    <th>Likes</th>
+                </tr>
+            
+                <script>
+                    $(document).ready(function () {
+                       
+                        $.getJSON("C:\Users\d9vya\Desktop\IT Practical\pets.json", function (data) {
+                            var Pet = '';
+
+                            $.each(data, function (key, value) {
+                                Pet += '<tr>';
+
+                                Pet += '<td>' +
+                                value.Petname + '</td>';
+
+                                Pet += '<td>' +
+                                value.Petage  + '</td>';
+
+                                Pet += '<td>' +
+                                value.Petweight + '</td>';
+
+                                Pet += '<td>' +
+                                value.Pettype + '</td>';
+
+                                Pet += '<td>' +
+                                value.Petlike + '</td>';
+
+                                Pet += '</tr>';
+                            });
+                            
+                            $('#table').append(Pet);
+                        });
+                    });
+                </script>
+            
+        </section>
+    </body>
+</html>

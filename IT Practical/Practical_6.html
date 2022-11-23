@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practical 6</title>
+
+        <style>
+            body {
+                font-family: sans-serif;
+                font-size: 25px;
+                text-align: center;
+            }
+
+            h1 {
+                color: lightcoral;
+                text-decoration: underline;
+            }
+
+            .form-container {
+                border: 2px solid lightcoral;
+                width: 40%;
+                margin:auto;
+            }
+
+            .form-elements {
+                display: grid;
+                grid-template-columns: 100px 200px;
+                align-items: center;
+                
+            }
+
+            .form-elements-name {
+                color: rebeccapurple;
+                margin-left: 100px;
+            }
+
+            .form-inputs {
+                padding: 15px;
+                margin-left: 150px;
+                font-size: 25px;
+            }
+
+            .sub-btn {
+                background-color: lightseagreen;
+                font-size: 20px;
+                color: white;
+                padding: 11px 25px;
+                border: none;
+                margin-bottom: 5px;
+                cursor: pointer;
+            }
+
+        </style>
+
+        <script>
+            function sub() {
+                var name = document.petForm.petName.value;
+                var age = document.petForm.petAge.value;
+                var weight = document.petForm.petWeight.value;
+                var type = document.petForm.petType.value;
+                var likes = document.petForm.petLikes.value;
+
+                let Pet = {
+                    Petname:name,
+                    Petage:age,
+                    Petweight:weight,
+                    Pettype:type,
+                    Petlike:likes
+                };
+
+                var j=JSON.stringify(Pet);
+                console.log(j);
+
+                alert("Submission Successful!");
+            }
+        </script>
+
+    </head>
+    <body>
+        <h1>Pet's Form</h1>
+
+        <form class="form-container" name="petForm" >
+            <div class="form-elements">
+                <div class="form-elements-name">
+                    Name:
+                </div>
+
+                <div class="form-inputs">
+                    <input type="text" name="petName" placeholder="Pet's Name">
+                </div>
+            </div>
+
+            <div class="form-elements">
+                <div class="form-elements-name">
+                    Age:
+                </div>
+
+                <div class="form-inputs">
+                    <input type="number" name="petAge" placeholder="Pet's Age">
+                </div>
+            </div>
+
+            <div class="form-elements">
+                <div class="form-elements-name">
+                    Weight:
+                </div>
+
+                <div class="form-inputs">
+                    <input type="number" name="petWeight" placeholder="Pet's Weight">
+                </div>
+            </div>
+
+            <div class="form-elements">
+                <div class="form-elements-name">
+                    Type:
+                </div>
+
+                <div class="form-inputs">
+                    <input type="text" name="petType" placeholder="Pet's Type">
+                </div>
+            </div>
+
+            <div class="form-elements">
+                <div class="form-elements-name">
+                    Likes:
+                </div>
+
+                <div class="form-inputs">
+                    <input type="text" name="petLikes" placeholder="Pet's Like">
+                </div>
+            </div>
+            </div>
+
+            <input class="sub-btn" type="submit" value="Submit" onclick="sub();">
+        </form>
+    </body>
+</html>
+ 

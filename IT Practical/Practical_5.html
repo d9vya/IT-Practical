@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Practical 5</title>
+    </head>
+    <style>
+        .display {
+            display: block;
+            text-align: center;
+            font-size: 25px;
+        }
+    </style>
+
+    <script>
+        function red() {
+            var change1 = document.getElementById('para');
+            change1.style.color = 'red';
+        }
+
+        function green() {
+            var change2 = document.getElementById('para');
+            change2.style.color = 'green';
+        }
+
+        function blue() {
+            var change3 = document.getElementById('para');
+            change3.style.color = 'blue';
+        }
+
+        function s10() {
+            var change4 = document.getElementById('para');
+            change4.style.fontSize = 10;
+        }
+
+        function s20() {
+            var change5 = document.getElementById('para');
+            change5.style.fontSize = 20;
+        }
+
+        function s30() {
+            var change6 = document.getElementById('para');
+            change6.style.fontSize = 30;
+        }
+
+        function consolas() {
+            var change7 = document.getElementById('para');
+            change7.style.fontFamily = 'consolas';
+        }
+
+        function courier() {
+            var change8 = document.getElementById('para');
+            change8.style.fontFamily = 'courier';
+        }
+
+        function verdana() {
+            var change9 = document.getElementById('para');
+            change9.style.fontFamily = 'verdana';
+        }
+    </script>
+    <body>
+        <div class="display">
+            <p id="para">In a fast-changing world, the fate of the country can 
+                be moulded through our ability to harness modern science and 
+                technology, which is a road to boost the development programs 
+                of the country. Rapid technological advances have reduced the 
+                dependency on natural resources or the factors in proportion 
+                to it. Man is performing precisely by machines with a regular 
+                improvement in his work because of quick technological changes 
+                by virtue of scientific advancement all around the world. We 
+                have accomplished desired scientific and technological 
+                advancement and have succeeded in boosting various important 
+                international activities like information and telecommunication, 
+                television, meteorological services, medical advancement, 
+                industrial development, nuclear research, Space Research 
+                Oceanographic Research, etc.
+            </p>
+            
+            <input type="button" value='Red' style="width: 200px; height: 300 px; font-size: 25px;"; onclick="red();">
+            <input type="button" value='Green' style="width: 200px; height: 300 px; font-size: 25px;"; onclick="green();">
+            <input type="button" value='Blue' style="width: 200px; height: 300 px; font-size: 25px;"; onclick="blue();"> <br>
+
+            <input type="button" value='10' style="width: 200px; height: 100 px; font-size: 25px;"; onclick="s10();">
+            <input type="button" value='20' style="width: 200px; height: 100 px; font-size: 25px;"; onclick="s20();">
+            <input type="button" value='30' style="width: 200px; height: 100 px; font-size: 25px;"; onclick="s30();"> <br>
+            
+            <input type="button" value='Consolas' style="width: 200px; height: 100 px; font-size: 25px;" onclick="consolas();">
+            <input type="button" value='Courier' style="width: 200px; height: 100 px; font-size: 25px;" onclick="courier();">
+            <input type="button" value='Verdana' style="width: 200px; height: 100 px; font-size: 25px;" onclick="verdana();"> <br>   
+        </div>
+    </body>
+</html>
+

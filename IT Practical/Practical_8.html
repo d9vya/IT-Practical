@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practical 8</title>
+  <style>
+        
+  </style>
+</head>
+<body>
+  <h1 id = "h1">B.Sc. Hons Computer Science</h1>
+  <table style = "width:50%" class = "styled-table">
+    <tr>
+      <td>Degree</td>
+      <td>Bachelors</td>
+    </tr>
+    <tr>
+      <td>Duration</td>
+      <td>3 years</td>
+    </tr>
+    <tr>
+      <td>Average fee</td>
+      <td>1 Lakh</td>
+    </tr>
+    <tr>
+      <td>Average Salary</td>
+      <td>4-6 LPA</td>
+    </tr>
+    <tr>
+      <td>Eligibility</td>
+      <td>10+2 or equivalent</td>
+    </tr>
+    <tr>
+      <td>Employement Roles</td>
+      <td>Full Stack developer,Software developer,Buisness Analyst,Data Scientist etc.</td>
+    </tr>
+  </table>
+
+  <h4>Subjects Year 1</h4>
+  <table style = "width:50%"  class = "styled-table">
+    <tr>
+      <th>Semester I</th>
+      <th>Semester II</th>
+    </tr>
+    <tr>
+      <td>Programming in c++</td>
+      <td>Programming min Java</td>
+    </tr>
+    <tr>
+      <td>Computer Architecture</td>
+      <td>Data Structures</td>
+    </tr>
+    <tr>
+      <td>Basic Electrical engineering</td>
+      <td>Digital Electronics</td>
+    </tr>
+    
+  </table>
+
+  <h4>Subjects Year 2</h4>
+  <table style = "width:50%"  class = "styled-table">
+    <tr>
+      <th>Semester III</th>
+      <th>Semester IV</th>
+    </tr>
+    <tr>
+      <td>Discrete Structures</td>
+      <td>Analysis of Algorithm</td>
+    </tr>
+    <tr>
+      <td>Operating Systems</td>
+      <td>Data Base management</td>
+    </tr>
+    <tr>
+      <td>Computer Networks</td>
+      <td>Software Engineering</td>
+    </tr>
+    
+  </table>
+
+  <h4>Subjects Year 3</h4>
+  <table style = "width:50%"  class = "styled-table">
+    <tr>
+      <th>Semester V</th>
+      <th>Semester VI</th>
+    </tr>
+    <tr>
+      <td>Internet Technologies</td>
+      <td>Artificial Intelligence</td>
+    </tr>
+    <tr>
+      <td>Theory of Computation</td>
+      <td>Computer Graphics</td>
+    </tr>
+    
+  </table>
+  <button type="button" onclick="myFunction()" class="b1" style="width: 200px; height: 40px;">Change Style</button>
+  <script>
+    document.getElementById("p1").style.backgroundColor = "#009879";
+    document.getElementById("p1").style.fontFamily = "georgia";
+    document.getElementById("h1").style.color = "white";
+    document.getElementById("h1").style.backgroundImage = "url(backg.jpg)";
+    function myFunction() {
+
+        var head = document.getElementsByTagName('HEAD')[0];
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'style_8.css';
+        head.appendChild(link);
+        }
+  </script>
+</body>
+</html>
